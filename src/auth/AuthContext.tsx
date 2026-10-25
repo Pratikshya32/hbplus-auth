@@ -43,7 +43,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     loading,
     authError,
     startDemoSession: () => {
-      if (!__DEV__) return;
       setDemoUser({ displayName: 'Demo HBPlus Member', email: 'demo@hbplus.fit', photoURL: null });
     },
     signOutUser: async () => {
